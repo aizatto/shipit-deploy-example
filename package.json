@@ -1,0 +1,23 @@
+{
+  "name": "deploy",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "npx shipit production deploy --shipitfile build/shipitfile.js",
+    "rollback": "npx shipit production rollback --shipitfile build/shipitfile.js",
+    "restart": "npx shipit production pm2:restart --shipitfile build/shipitfile.js",
+    "status": "npx shipit production pm2:status --shipitfile build/shipitfile.js"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.5",
+    "shipit-cli": "^4.2.0",
+    "shipit-deploy": "^4.1.4",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "json5": "^2.1.0"
+  }
+}

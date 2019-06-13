@@ -1,0 +1,9 @@
+{
+  default: {
+    deployTo: '/var/www/example/',
+    repositoryUrl: 'git@github.com:aizatto/example.git',
+  },
+  production: {
+    servers: 'aizat@example.com',
+  },
+}
