@@ -14,6 +14,18 @@ Please leave any comments or feedback in this GitHub issue:
 
 https://github.com/aizatto/shipit-deploy-example/issues/1
 
+I generally put a directory similar to this in my [Lerna](https://github.com/lerna/lerna) managed monorepo. For example it may live in:
+
+```sh
+packages/deploy
+```
+
+Then whenever I need to deploy, I go into that folder and run:
+
+```sh
+yarn deploy
+```
+
 # Usage
 
 Remember to compile TypeScript before deploying.
